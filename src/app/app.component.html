@@ -1,0 +1,4 @@
+@if(showEventDetails) {
+  <app-event-details [subject]="eventName" [startTime]="startTime" [endTime]="endTime"/>
+}
+<app-scheduler (eventClicked)="onSchedulerEventClicked($event)"/>
